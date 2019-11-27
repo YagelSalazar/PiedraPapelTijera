@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Rubik";
+    src: url("./Rubik/Rubik-Black.ttf");
+    src: url("./Rubik/Rubik-BlackItalic.ttf");
+    src: url("./Rubik/Rubik-Bold.ttf");
+    src: url("./Rubik/Rubik-BoldItalic.ttf");
+    src: url("./Rubik/Rubik-Italic.ttf");
+    src: url("./Rubik/Rubik-Light.ttf");
+    src: url("./Rubik/Rubik-LightItalic.ttf");
+    src: url("./Rubik/Rubik-Medium.ttf");
+    src: url("./Rubik/Rubik-MediumItalic.ttf");
+    src: url("./Rubik/Rubik-Regular.ttf");
+  }
+
+h1.title {
+    font-family: "Rubik";
+    font-size: 270%;
+    color: black;
+  }
+
+body {
+  background: #FF5F6D;
+  background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);
+  background: linear-gradient(to right, #FFC371, #FF5F6D);  
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+img {
+  height: 15%;
+  width: 15%;
+}
+
+.score {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.computer {
+  color: red;
+  font-family: "Rubik";
+  font-size: 100%;
+}
+
+.user {
+  color: blue;
+  font-family: "Rubik";
+  font-size: 100%;
+}
+
+.opt{
+  border-radius: 50px;
+  width: 30%;
+  height: 30%;
+}
+
+.tag1 {
+  border-left: 6px solid royalblue;
+  background-color: lightskyblue;
+  margin-top: 1px;
+  margin-bottom: 5px;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  height: 5%;
+  width: 5%; 
+}
+
+.tag2 {
+  border-left: 6px solid red;
+  background-color: lightpink;
+  margin-top: 1px;
+  margin-bottom: 5px;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  height: 5%;
+  width: 5%; 
+}
+
+.restart{
+  border-radius: 19px;
+  height: 10%;
+  width: 14%;
+  display: flex;
+  justify-content: center;
+}
+
+.return {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0px;
+  padding-right: 1px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.instructions {
+  font-family: "Rubik";
+  font-size: 150%;
+  color: black;
+}
+
+.message {
+  padding-top: 0px;
+  padding-right: 1px;
+  padding-bottom: 1%;
+  padding-left: 15%;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+.winner {
+  font-family: "Rubik";
+  font-size: 300%;
+  color: rgb(77, 179, 64);
+}
+
+.loser {
+  font-family: "Rubik";
+  font-size: 300%;
+  color: rgb(230, 50, 50);
+}
+
+.tie {
+  font-family: "Rubik";
+  font-size: 300%;
+  color: rgb(220, 247, 70);
+}

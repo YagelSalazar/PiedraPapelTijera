@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="text/javascript" src="./js/rules.js"></script>
+    <title>Piedra papel tijera</title>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <h1 class="title">Piedra, papel o tijera</h1>
+        </header>
+        <div class="score">
+          <div class="tag1">
+            <h2 class="user">P1: </h2><h2 class="user" id="p1">0</h2>
+          </div>
+          <div class="tag2">
+            <h2 class="computer">PC: </h2><h2 class="computer" id="p2">0</h2>
+          </div>
+        </div>
+        <div class="return">
+          <button class="restart"><img class="return" src="./img/return.png" /></button>
+        </div>
+        <div class="message">
+          <h1 class="instructions" id="firstM">¡Hola! Juguemos un poco, escoge tu movimiento con los botones de abajo...</h1>
+        </div>
+        <div class="result">
+          <h1 class="winner" id="win">¡Hey! Ganaste</h1>
+          <h1 class="loser" id="lose">¡Ups! Has perdido</h1>
+          <h1 class="tie" id="tie">¡Empate!</h1>
+        </div>
+        <div class="message"><h1 class="instructions" id="secondM">Ahora haz tu siguiente movimiento...</h1></div>
+        <div class="buttons">
+          <button class="opt" onclick="piedra()"><img src="./img/piedra.png"/></button>
+          <button class="opt" onclick="papel()"><img src="./img/papel.png" /></button>
+          <button class="opt" onclick="tijera()"><img src="./img/tijera.png" /></button>
+        </div>
+    </div> 
+  </body>
+</html>
