@@ -12,16 +12,42 @@
     src: url("./Rubik/Rubik-Regular.ttf");
   }
 
-h1.title {
+h1.title1 {
     font-family: "Rubik";
-    font-size: 270%;
-    color: black;
+    font-size: 285%;
+    color: rgb(76, 131, 168);
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+  
+  h1.title2 {
+    font-family: "Rubik";
+    font-size: 285%;
+    color: rgb(112, 170, 73);
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+
+  h1.title3 {
+    font-family: "Rubik";
+    font-size: 285%;
+    color: rgb(216, 141, 55);
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+
+  h1.title4 {
+    font-family: "Rubik";
+    font-size: 285%;
+    color: rgb(180, 48, 48);
+    padding-right: 1%;
+    padding-left: 1%;
   }
 
 body {
-  background: #FF5F6D;
-  background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);
-  background: linear-gradient(to right, #FFC371, #FF5F6D);  
+  background: #ECE9E6;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 }
 
 header {
@@ -36,7 +62,7 @@ header {
 }
 
 img {
-  height: 15%;
+  height: 100%;
   width: 15%;
 }
 
@@ -57,53 +83,73 @@ img {
   font-size: 100%;
 }
 
-.opt{
+.button{
   border-radius: 50px;
   width: 30%;
   height: 30%;
-}
-
-.tag1 {
-  border-left: 6px solid royalblue;
-  background-color: lightskyblue;
-  margin-top: 1px;
-  margin-bottom: 5px;
-  padding-top: 0px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  height: 5%;
-  width: 5%; 
-}
-
-.tag2 {
-  border-left: 6px solid red;
-  background-color: lightpink;
-  margin-top: 1px;
-  margin-bottom: 5px;
-  padding-top: 0px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  height: 5%;
-  width: 5%; 
+  padding: 16px 32px;
+  display: inline-block;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .restart{
-  border-radius: 19px;
-  height: 10%;
-  width: 14%;
+  width: 70%;
   display: flex;
   justify-content: center;
+  background-color: transparent; 
+  border: 2px solid rgb(77, 179, 64);
+  border-bottom-left-radius: 20px;
+}
+
+.restart:hover {
+  background-color: rgb(77, 179, 64);
+}
+
+.opt1 {
+  background-color: transparent; 
+  color: black; 
+  border: 2px solid rgb(190, 49, 148);
+}
+
+.opt1:hover {
+  background-color: rgb(190, 49, 148);
+  color: transparent;
+}
+
+.tag1 {
+  border-right: 6px solid royalblue;
+  background-color: rgb(196, 214, 226);
+  margin-top: 1px;
+  margin-bottom: 5px;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  height: 5%;
+  width: 25%;
+  border-top-left-radius: 20px;  
+}
+
+.tag2 {
+  border-right: 6px solid rgb(223, 34, 34);
+  background-color: rgb(238, 208, 212);
+  margin-top: 1px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  height: 5%;
+  width: 25%;
 }
 
 .return {
   display: flex;
   justify-content: flex-end;
-  padding-top: 0px;
-  padding-right: 1px;
-  padding-bottom: 5px;
-  padding-left: 10px;
+  width: 100%;
 }
 
 .instructions {
@@ -115,14 +161,17 @@ img {
 .message {
   padding-top: 0px;
   padding-right: 1px;
-  padding-bottom: 1%;
-  padding-left: 15%;
+  padding-bottom: 5%;
+  padding-left: 1%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .result {
   display: flex;
   justify-content: center;
-  padding-bottom: 5%;
+  align-items: center;
+  padding-bottom: 2%;
 }
 
 .winner {
@@ -141,4 +190,36 @@ img {
   font-family: "Rubik";
   font-size: 300%;
   color: rgb(220, 247, 70);
+}
+
+.sel {
+  height: 80%;
+  width: 30%;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.flex-container > div {
+  width: 20%;
+  height: 20%;
+  align-self: center;
+  padding-top: 3%;
+  padding-right: 1%;
+  padding-bottom: 4%;
+  padding-left: 1%;
+}
+
+.messagecon {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
 }

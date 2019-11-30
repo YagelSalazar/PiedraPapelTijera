@@ -8,33 +8,50 @@
   </head>
   <body>
     <div class="container">
-        <header>
-            <h1 class="title">Piedra, papel o tijera</h1>
-        </header>
-        <div class="score">
-          <div class="tag1">
-            <h2 class="user">P1: </h2><h2 class="user" id="p1">0</h2>
-          </div>
-          <div class="tag2">
-            <h2 class="computer">PC: </h2><h2 class="computer" id="p2">0</h2>
+        <div class="flex-container">
+          <header style="flex-basis:50%">
+              <h1 class="title1">Piedra,</h1><h1 class="title2"> papel</h1><h1 class="title3"> o</h1><h1 class="title4"> tijera</h1>
+          </header> 
+          <div>
+            <div class="score">
+              <div class="tag1">
+                <h2 class="user">P1: </h2><h2 class="user" id="p1">0</h2>
+              </div>
+              <div class="tag2">
+                <h2 class="computer">PC: </h2><h2 class="computer" id="p2">0</h2>
+              </div>
+            </div>
+            <div class="return">
+              <button class="restart" type="button" onClick="reloadThePage()"><img src="./img/return.png"/></button>
+            </div>
           </div>
         </div>
-        <div class="return">
-          <button class="restart"><img class="return" src="./img/return.png" /></button>
+        <div>
+          <div class="message">
+            <div class="messagecon">
+              <h1 class="instructions" id="su">Has elegido: </h1>
+              <img src="./img/piedra.png" class="sel" id="pi1"/>
+              <img src="./img/papel.png" class="sel" id="pa1"/>
+              <img src="./img/tijera.png" class="sel" id="ti1"/>
+            </div>
+            <h1 class="instructions" id="firstM">¡Hola! Juguemos un poco, escoge tu movimiento con los botones de abajo...</h1>
+            <div class="messagecon">
+              <h1 class="instructions" id="sp">La PC elige: </h1>
+              <img src="./img/piedra.png" class="sel" id="pi2"/>
+              <img src="./img/papel.png" class="sel" id="pa2"/>
+              <img src="./img/tijera.png" class="sel" id="ti2"/>
+            </div>
+          </div>
         </div>
-        <div class="message">
-          <h1 class="instructions" id="firstM">¡Hola! Juguemos un poco, escoge tu movimiento con los botones de abajo...</h1>
+        <div class="buttons">
+          <button class="button opt1" onclick="piedra()"><img src="./img/piedra.png"/></button>
+          <button class="button   opt1" onclick="papel()"><img src="./img/papel.png" /></button>
+          <button class="button opt1" onclick="tijera()"><img src="./img/tijera.png" /></button>
         </div>
         <div class="result">
           <h1 class="winner" id="win">¡Hey! Ganaste</h1>
           <h1 class="loser" id="lose">¡Ups! Has perdido</h1>
           <h1 class="tie" id="tie">¡Empate!</h1>
-        </div>
-        <div class="message"><h1 class="instructions" id="secondM">Ahora haz tu siguiente movimiento...</h1></div>
-        <div class="buttons">
-          <button class="opt" onclick="piedra()"><img src="./img/piedra.png"/></button>
-          <button class="opt" onclick="papel()"><img src="./img/papel.png" /></button>
-          <button class="opt" onclick="tijera()"><img src="./img/tijera.png" /></button>
         </div>
     </div> 
   </body>
