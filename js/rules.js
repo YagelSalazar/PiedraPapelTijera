@@ -40,10 +40,6 @@ function piedra() {
     score(this.result)
   }
 
-  piedra(() => {
-      
-  })
-
 function papel() {
     this.choose = "pa2"
     hide()
